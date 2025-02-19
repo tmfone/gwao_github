@@ -1,11 +1,13 @@
 {
   "timeZone": "Europe/Vienna",
   "dependencies": {
-    "libraries": [{
-      "userSymbol": "OAuth2",
-      "libraryId": "1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF",
-      "version": "35"
-    }]
+    "libraries": [
+      {
+        "userSymbol": "OAuth2",
+        "libraryId": "1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF",
+        "version": "35"
+      }
+    ]
   },
   "exceptionLogging": "STACKDRIVER",
   "oauthScopes": [
@@ -22,16 +24,18 @@
   "addOns": {
     "common": {
       "name": "GitHub Reader (demo)",
-      "logoUrl": "https://cdn.rawgit.com/webdog/octicons-png/bd02e5bc/git-branch.svg.png", 
+      "logoUrl": "https://cdn.rawgit.com/webdog/octicons-png/bd02e5bc/git-branch.svg.png",
       "homepageTrigger": {
         "runFunction": "handleHomePage"
       },
-      "universalActions": [{
-        "label": "Settings",
-        "runFunction": "handleShowSettings"
-      }],
+      "universalActions": [
+        {
+          "label": "Settings",
+          "runFunction": "handleShowSettings"
+        }
+      ],
       "openLinkUrlPrefixes": [
-          "https://github.com"
+        "https://github.com"
       ],
       "layoutProperties": {
         "primaryColor": "#111111",
@@ -39,13 +43,15 @@
       }
     },
     "gmail": {
-      "contextualTriggers": [{
-        "unconditional": {
-        },
-        "onTriggerFunction": "handleGmailContext"
-      }]
+      "contextualTriggers": [
+        {
+          "unconditional": {},
+          "onTriggerFunction": "handleGmailContext"
+        }
+      ]
     },
     "drive": {},
     "calendar": {}
-  }
+  },
+  "runtimeVersion": "V8"
 }
